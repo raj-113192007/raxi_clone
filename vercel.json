@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/web/config", "destination": "/frontend/web/config.js" },
+    { "source": "/api/webapi/(.*)", "destination": "/frontend/api/index.js" },
+    { "source": "/api/(.*)", "destination": "/frontend/api/index.js" },
+    { "source": "/assets/(.*)", "destination": "/frontend/assets/$1" },
+    { "source": "/favico.ico", "destination": "/frontend/favico.ico" },
+    { "source": "/share-cover.jpg", "destination": "/frontend/share-cover.jpg" },
+    { "source": "/((?!frontend/).*)", "destination": "/frontend/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/web/config(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PUT,DELETE,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "*" }
+      ]
+    }
+  ]
+}
