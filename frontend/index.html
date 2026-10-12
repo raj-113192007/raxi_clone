@@ -14,8 +14,29 @@
 		<meta name="twitter:card" content="summary_large_image" />
 		<script type="module" crossorigin src="/assets/js/index-CHZRDmSZ.js"></script>
 		<link rel="stylesheet" crossorigin href="/assets/css/index-CjCWWsy1.css">
-		<script>window.CONFIG=Object.freeze({"VITE_API_URL":"http://localhost:5000","VITE_BASE_LANGUAGE":"en","VITE_BASE_PROJECTNAME":"ar096","VITE_PNGSTART":"ar096","VITE_HOME":"red096Home","VITE_MAINCOLOR":"blackRedStyle","VITE_WINGO":"[30,1,2,3]","VITE_GTAG_ID":"G-W7ZEWGG27Q","BASE_URL":"/","MODE":"production","DEV":true,"PROD":false,"tenant":"ar096"});</script>
-		<script src="/web/config?_key=ar096"></script>
+		<script>
+			(function() {
+				var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+				var apiUrl = isLocal ? "http://localhost:5000" : "";
+				window.CONFIG = Object.freeze({
+					"VITE_API_URL": apiUrl,
+					"VITE_BASE_LANGUAGE": "en",
+					"VITE_BASE_PROJECTNAME": "ar096",
+					"VITE_PNGSTART": "ar096",
+					"VITE_HOME": "red096Home",
+					"VITE_MAINCOLOR": "blackRedStyle",
+					"VITE_WINGO": "[30,1,2,3]",
+					"VITE_GTAG_ID": "G-W7ZEWGG27Q",
+					"BASE_URL": "/",
+					"MODE": "production",
+					"DEV": isLocal,
+					"PROD": !isLocal,
+					"tenant": "ar096"
+				});
+			})();
+		</script>
+		<script src="/web/config.js?_key=ar096"></script>
+		<script src="/assets/js/mock-api.js"></script>
 	
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7ZEWGG27Q"></script>

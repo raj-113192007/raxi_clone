@@ -8,7 +8,7 @@
         "categoryName": "电子大奖",
         "state": 1,
         "sort": 98,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_202604261225496q35.png"
+        "categoryImg": "/assets/live/gamecategory_202604261225496q35.png"
       },
       {
         "id": 1,
@@ -17,7 +17,7 @@
         "categoryName": "彩票",
         "state": 1,
         "sort": 20,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152734yj8b.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152734yj8b.png"
       },
       {
         "id": 2,
@@ -26,7 +26,7 @@
         "categoryName": "热门游戏",
         "state": 1,
         "sort": 18,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_2026042515262834bu.png"
+        "categoryImg": "/assets/live/gamecategory_2026042515262834bu.png"
       },
       {
         "id": 8,
@@ -35,7 +35,7 @@
         "categoryName": "小游戏",
         "state": 1,
         "sort": 9,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152636wdy2.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152636wdy2.png"
       },
       {
         "id": 4,
@@ -44,7 +44,7 @@
         "categoryName": "电子游戏",
         "state": 1,
         "sort": 8,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152748trmx.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152748trmx.png"
       },
       {
         "id": 5,
@@ -53,7 +53,7 @@
         "categoryName": "体育游戏",
         "state": 1,
         "sort": 7,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152727mmy5.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152727mmy5.png"
       },
       {
         "id": 6,
@@ -62,7 +62,7 @@
         "categoryName": "视讯游戏",
         "state": 1,
         "sort": 6,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152718ttr9.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152718ttr9.png"
       },
       {
         "id": 7,
@@ -71,7 +71,7 @@
         "categoryName": "棋牌游戏",
         "state": 1,
         "sort": 5,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_20260425152658a7uf.png"
+        "categoryImg": "/assets/live/gamecategory_20260425152658a7uf.png"
       },
       {
         "id": 3,
@@ -80,7 +80,7 @@
         "categoryName": "捕鱼游戏",
         "state": 1,
         "sort": 2,
-        "categoryImg": "https://ossimg.raxiwsx.com/RAXI.WIN/gamecategory/gamecategory_202604251526438lj8.png"
+        "categoryImg": "/assets/live/gamecategory_202604251526438lj8.png"
       }
     ],
     "code": 0,
@@ -2857,7 +2857,7 @@
     "data": [
       {
         "url": "#/wallet/Recharge",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260922123853jtcl.png",
+        "bannerUrl": "/assets/live/Banner_20260922123853jtcl.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2867,7 +2867,7 @@
       },
       {
         "url": "https://t.me/RAXIGAME",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260504163352unjf.png",
+        "bannerUrl": "/assets/live/Banner_20260504163352unjf.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2877,7 +2877,7 @@
       },
       {
         "url": "#/activity/DailyTasks",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202605051403104uhf.png",
+        "bannerUrl": "/assets/live/Banner_202605051403104uhf.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2887,7 +2887,7 @@
       },
       {
         "url": "#/activity/ActivityDetail?id=75",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260504163239ltmi.png",
+        "bannerUrl": "/assets/live/Banner_20260504163239ltmi.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2897,7 +2897,7 @@
       },
       {
         "url": "",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202605041631513kmu.png",
+        "bannerUrl": "/assets/live/Banner_202605041631513kmu.png",
         "categoryType": 0,
         "jumpLinkType": 1,
         "vendorCode": "TB_Chess",
@@ -2907,7 +2907,7 @@
       },
       {
         "url": "#/activity/FirstRecharge",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20261002194250sfr3.png",
+        "bannerUrl": "/assets/live/Banner_20261002194250sfr3.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2917,7 +2917,7 @@
       },
       {
         "url": "#/wallet/Recharge",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202605041630437q1y.png",
+        "bannerUrl": "/assets/live/Banner_202605041630437q1y.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2927,7 +2927,7 @@
       },
       {
         "url": "https://t.me/ARWalletCLUB",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260504163022oos4.png",
+        "bannerUrl": "/assets/live/Banner_20260504163022oos4.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2937,7 +2937,7 @@
       },
       {
         "url": "#/activity/MemberPackage",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260505140350y9d7.png",
+        "bannerUrl": "/assets/live/Banner_20260505140350y9d7.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2947,7 +2947,7 @@
       },
       {
         "url": "#/activity/DailySignIn",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260504162738s7ro.png",
+        "bannerUrl": "/assets/live/Banner_20260504162738s7ro.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2957,7 +2957,7 @@
       },
       {
         "url": "",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202605041716408si6.png",
+        "bannerUrl": "/assets/live/Banner_202605041716408si6.png",
         "categoryType": 0,
         "jumpLinkType": 1,
         "vendorCode": "TB_Chess",
@@ -2967,7 +2967,7 @@
       },
       {
         "url": "#/activity/Turntable",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_20260925145903y8ws.png",
+        "bannerUrl": "/assets/live/Banner_20260925145903y8ws.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2977,7 +2977,7 @@
       },
       {
         "url": "#/main/InvitationBonus",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_2026050713062831pj.jpg",
+        "bannerUrl": "/assets/live/Banner_2026050713062831pj.jpg",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2987,7 +2987,7 @@
       },
       {
         "url": "https://whatsapp.com/channel/0029VbCm1AjI7BeNqHV23k18",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202605051404339dx6.png",
+        "bannerUrl": "/assets/live/Banner_202605051404339dx6.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -2997,7 +2997,7 @@
       },
       {
         "url": "#/main/RechargeCoupon",
-        "bannerUrl": "https://ossimg.raxiwsx.com/RAXI.WIN/banner/Banner_202610081529352pqb.png",
+        "bannerUrl": "/assets/live/Banner_202610081529352pqb.png",
         "categoryType": 0,
         "jumpLinkType": 0,
         "vendorCode": "",
@@ -8129,10 +8129,10 @@
       "isSplitLocalEWallet": true,
       "jackportMaxReswadAmount": 500.0,
       "projectName": "RAXI.WIN",
-      "projectLogo": "https://ossimg.raxiwsx.com/RAXI.WIN/other/h5setting_20260505202958ehbj.png",
+      "projectLogo": "/assets/live/h5setting_20260505202958ehbj.png",
       "languages": "en|hd",
-      "webIco": "https://ossimg.raxiwsx.com/RAXI.WIN/other/h5setting_202604271157266bc2.png",
-      "headLogo": "https://ossimg.raxiwsx.com/RAXI.WIN/other/h5setting_20260505203004dpfp.png",
+      "webIco": "/assets/live/h5setting_202604271157266bc2.png",
+      "headLogo": "/assets/live/h5setting_20260505203004dpfp.png",
       "dollarSign": "₹",
       "upperOrLower": "0",
       "defaultCurrentLanguage": "en",
