@@ -143,7 +143,20 @@ app.post(['/api/webapi/GetLoadedSetting', '/api/webapi/getloadedsetting'], (req,
   if (liveData.GetLoadedSetting) {
     return res.json(liveData.GetLoadedSetting);
   }
-  res.json(success({}));
+  res.json(success({ needPopupFirstRecharge: true }));
+});
+
+// 10b. First Recharge List for Bonus Dialog
+app.post(['/api/webapi/GetFirstRechargeList', '/api/webapi/getfirstrechargelist'], (req, res) => {
+  if (liveData.GetFirstRechargeList) {
+    return res.json(liveData.GetFirstRechargeList);
+  }
+  res.json(success([
+    { id: 1, rechargeAmount: 200, rewardAmount: 18, canReceive: false, isFinshed: false },
+    { id: 2, rechargeAmount: 500, rewardAmount: 58, canReceive: false, isFinshed: false },
+    { id: 3, rechargeAmount: 1000, rewardAmount: 108, canReceive: false, isFinshed: false },
+    { id: 4, rechargeAmount: 3000, rewardAmount: 288, canReceive: false, isFinshed: false }
+  ]));
 });
 
 // 11. Activities

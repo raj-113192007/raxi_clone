@@ -65,6 +65,26 @@ module.exports = (req, res) => {
     }));
   }
 
+  if (endpointLower === 'getloadedsetting') {
+    const base = (dataMap.GetLoadedSetting && dataMap.GetLoadedSetting.data) || {};
+    return res.status(200).json(success({
+      ...base,
+      needPopupFirstRecharge: true
+    }));
+  }
+
+  if (endpointLower === 'getfirstrechargelist') {
+    if (dataMap.GetFirstRechargeList) {
+      return res.status(200).json(dataMap.GetFirstRechargeList);
+    }
+    return res.status(200).json(success([
+      { id: 1, rechargeAmount: 200, rewardAmount: 18, canReceive: false, isFinshed: false },
+      { id: 2, rechargeAmount: 500, rewardAmount: 58, canReceive: false, isFinshed: false },
+      { id: 3, rechargeAmount: 1000, rewardAmount: 108, canReceive: false, isFinshed: false },
+      { id: 4, rechargeAmount: 3000, rewardAmount: 288, canReceive: false, isFinshed: false }
+    ]));
+  }
+
   // 2. Check exact match in live_data.json (case-insensitive)
   for (const key of Object.keys(dataMap)) {
     if (key.toLowerCase() === endpointLower) {
@@ -110,11 +130,11 @@ module.exports = (req, res) => {
 
   if (endpointLower === 'getuserinfo') {
     return res.status(200).json(success({
-      userId: "1001",
-      userName: "Mem_1632",
+      userId: "135474",
+      userName: "MEMBERNNGX18EY",
       mobile: "7061121632",
       avatar: '1',
-      vipLevel: 1,
+      vipLevel: 0,
       balance: 10000.0,
       totalBalance: 10000.0,
       userType: 1,

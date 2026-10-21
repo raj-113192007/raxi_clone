@@ -8331,7 +8331,7 @@
   },
   "GetLoadedSetting": {
     "data": {
-      "needPopupFirstRecharge": false,
+      "needPopupFirstRecharge": true,
       "isExistGrandAward": false,
       "children_Lv_RebateAmount_Yesterday": null,
       "returnAwards": null,
@@ -8543,5 +8543,41 @@
     "msgCode": 0,
     "traceId": "",
     "serviceNowTime": "2026-10-12 20:13:31"
+  },
+  "GetFirstRechargeList": {
+    "code": 0,
+    "msg": "Succeed",
+    "msgCode": 0,
+    "data": [
+      {
+        "id": 1,
+        "rechargeAmount": 200,
+        "rewardAmount": 18,
+        "canReceive": false,
+        "isFinshed": false
+      },
+      {
+        "id": 2,
+        "rechargeAmount": 500,
+        "rewardAmount": 58,
+        "canReceive": false,
+        "isFinshed": false
+      },
+      {
+        "id": 3,
+        "rechargeAmount": 1000,
+        "rewardAmount": 108,
+        "canReceive": false,
+        "isFinshed": false
+      },
+      {
+        "id": 4,
+        "rechargeAmount": 3000,
+        "rewardAmount": 288,
+        "canReceive": false,
+        "isFinshed": false
+      }
+    ],
+    "serviceNowTime": "2026-10-21 08:20:00"
   }
 }
