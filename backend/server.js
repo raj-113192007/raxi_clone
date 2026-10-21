@@ -336,8 +336,65 @@ app.post([
   res.json(success({ verifyCode: '123456' }, 'Code sent: 123456'));
 });
 
-// 20. Universal API Mock Fallback
+// 20. Dynamic Recharge Endpoints & Live Data Check
+app.post(['/api/webapi/GetRechargeTypes', '/api/webapi/getrechargetypes'], (req, res) => {
+  let channelName = "Phonepe_QR";
+  try {
+    const parsed = req.body;
+    if (parsed && (parsed.payid === 2 || parsed.payTypeId === 2)) channelName = "Paytm_QR";
+    else if (parsed && (parsed.payid === 3 || parsed.payTypeId === 3)) channelName = "Online_Pay";
+    else if (parsed && (parsed.payid === 4 || parsed.payTypeId === 4)) channelName = "Now_UPI";
+    else if (parsed && (parsed.payid === 19 || parsed.payTypeId === 19)) channelName = "USDT_TRC20";
+    else if (parsed && (parsed.payid === 21 || parsed.payTypeId === 21)) channelName = "ARPay_QR";
+  } catch (e) {}
+
+  res.json(success({
+    rechargetypelist: [
+      {
+        payTypeID: 101,
+        payName: channelName,
+        miniPrice: 100,
+        maxPrice: 50000,
+        rechargeRifts: 0,
+        delayedRewardDays: 0,
+        serviceFeeRate: 0,
+        quickConfigList: [
+          { rechargeAmount: 100, giftAmount: 0 },
+          { rechargeAmount: 200, giftAmount: 0 },
+          { rechargeAmount: 300, giftAmount: 0 },
+          { rechargeAmount: 400, giftAmount: 0 },
+          { rechargeAmount: 500, giftAmount: 0 },
+          { rechargeAmount: 1000, giftAmount: 0 },
+          { rechargeAmount: 2000, giftAmount: 0 },
+          { rechargeAmount: 3000, giftAmount: 0 },
+          { rechargeAmount: 5000, giftAmount: 0 }
+        ],
+        parameters: `${channelName},account`
+      }
+    ],
+    banklist: [],
+    localUsdtlist: [
+      {
+        usdtID: 1,
+        usdtName: "Tron(TRC20)",
+        usdtType: 1,
+        coding: "TYDzsxdUKabMA4KW9Nhn8nQvMQFm8j2h1W",
+        rate: 90.5
+      }
+    ],
+    thirdPayBankList: []
+  }));
+});
+
+// 21. Universal API Mock Fallback (checks liveData first)
 app.all('/api/webapi/*', (req, res) => {
+  const endpoint = req.path.split('/').filter(Boolean).pop() || '';
+  const epLower = endpoint.toLowerCase();
+  for (const key of Object.keys(liveData)) {
+    if (key.toLowerCase() === epLower) {
+      return res.json(liveData[key]);
+    }
+  }
   console.log(`[API Fallback] ${req.method} ${req.originalUrl}`);
   res.json(success({}, 'success'));
 });

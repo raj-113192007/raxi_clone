@@ -73,6 +73,185 @@
       ]);
     }
 
+    // Recharge / Deposit page handlers matching reference screenshot 100%
+    if (epLower === 'getpaytypename') {
+      return success({
+        typelist: [
+          {
+            payID: 1,
+            payTypeID: 1,
+            payName: "UPI x QR",
+            paySysName: "UPI x QR",
+            typeName: "UPI x QR",
+            payNameUrl: "/assets/svg/pay_upixqr.svg",
+            payNameUrl2: "/assets/svg/pay_upixqr.svg",
+            maxRechargeRifts: 0,
+            vipRechargeRate: 0,
+            minPrice: 100,
+            maxPrice: 50000,
+            scope: "100-50000"
+          },
+          {
+            payID: 2,
+            payTypeID: 2,
+            payName: "QR Pay",
+            paySysName: "QR Pay",
+            typeName: "QR Pay",
+            payNameUrl: "/assets/svg/pay_qrpay.svg",
+            payNameUrl2: "/assets/svg/pay_qrpay.svg",
+            maxRechargeRifts: 0,
+            vipRechargeRate: 0,
+            minPrice: 100,
+            maxPrice: 50000,
+            scope: "100-50000"
+          },
+          {
+            payID: 3,
+            payTypeID: 3,
+            payName: "Online Pay",
+            paySysName: "Online Pay",
+            typeName: "Online Pay",
+            payNameUrl: "/assets/svg/pay_onlinepay.svg",
+            payNameUrl2: "/assets/svg/pay_onlinepay.svg",
+            maxRechargeRifts: 0,
+            vipRechargeRate: 0,
+            minPrice: 100,
+            maxPrice: 50000,
+            scope: "100-50000"
+          },
+          {
+            payID: 4,
+            payTypeID: 4,
+            payName: "Now UPI",
+            paySysName: "Now UPI",
+            typeName: "Now UPI",
+            payNameUrl: "/assets/svg/pay_nowupi.svg",
+            payNameUrl2: "/assets/svg/pay_nowupi.svg",
+            maxRechargeRifts: 0,
+            vipRechargeRate: 0,
+            minPrice: 100,
+            maxPrice: 50000,
+            scope: "100-50000"
+          },
+          {
+            payID: 19,
+            payTypeID: 19,
+            payName: "USDT",
+            paySysName: "USDT",
+            typeName: "USDT",
+            payNameUrl: "/assets/svg/pay_usdt.svg",
+            payNameUrl2: "/assets/svg/pay_usdt.svg",
+            maxRechargeRifts: 0.02,
+            vipRechargeRate: 0,
+            minPrice: 10,
+            maxPrice: 50000,
+            scope: "10-50000"
+          },
+          {
+            payID: 21,
+            payTypeID: 21,
+            payName: "ARPay",
+            paySysName: "ARPay",
+            typeName: "ARPay",
+            payNameUrl: "/assets/svg/pay_arpay.svg",
+            payNameUrl2: "/assets/svg/pay_arpay.svg",
+            maxRechargeRifts: 0,
+            vipRechargeRate: 0,
+            minPrice: 100,
+            maxPrice: 50000,
+            scope: "100-50000"
+          }
+        ]
+      });
+    }
+
+    if (epLower === 'getrechargetypes') {
+      let channelName = "Phonepe_QR";
+      try {
+        let parsed = typeof reqBody === 'string' ? JSON.parse(reqBody) : reqBody;
+        if (parsed && (parsed.payid === 2 || parsed.payTypeId === 2)) channelName = "Paytm_QR";
+        else if (parsed && (parsed.payid === 3 || parsed.payTypeId === 3)) channelName = "Online_Pay";
+        else if (parsed && (parsed.payid === 4 || parsed.payTypeId === 4)) channelName = "Now_UPI";
+        else if (parsed && (parsed.payid === 19 || parsed.payTypeId === 19)) channelName = "USDT_TRC20";
+        else if (parsed && (parsed.payid === 21 || parsed.payTypeId === 21)) channelName = "ARPay_QR";
+      } catch (e) {}
+
+      return success({
+        rechargetypelist: [
+          {
+            payTypeID: 101,
+            payName: channelName,
+            miniPrice: 100,
+            maxPrice: 50000,
+            rechargeRifts: 0,
+            delayedRewardDays: 0,
+            serviceFeeRate: 0,
+            quickConfigList: [
+              { rechargeAmount: 100, giftAmount: 0 },
+              { rechargeAmount: 200, giftAmount: 0 },
+              { rechargeAmount: 300, giftAmount: 0 },
+              { rechargeAmount: 400, giftAmount: 0 },
+              { rechargeAmount: 500, giftAmount: 0 },
+              { rechargeAmount: 1000, giftAmount: 0 },
+              { rechargeAmount: 2000, giftAmount: 0 },
+              { rechargeAmount: 3000, giftAmount: 0 },
+              { rechargeAmount: 5000, giftAmount: 0 }
+            ],
+            parameters: `${channelName},account`
+          }
+        ],
+        banklist: [],
+        localUsdtlist: [
+          {
+            usdtID: 1,
+            usdtName: "Tron(TRC20)",
+            usdtType: 1,
+            coding: "TYDzsxdUKabMA4KW9Nhn8nQvMQFm8j2h1W",
+            rate: 90.5
+          }
+        ],
+        thirdPayBankList: []
+      });
+    }
+
+    if (epLower === 'getrechargerecord') {
+      return success({
+        pageNo: 1,
+        totalPage: 1,
+        totalCount: 1,
+        list: [
+          {
+            state: 2,
+            orderAmount: 100.0,
+            price: 100.0,
+            payName: "Phonepe_QR",
+            addTime: "2026-10-12 18:49:03",
+            createTime: "2026-10-12 18:49:03",
+            rechargeNumber: "RC20261012184903401096451b",
+            payTypeId: 101,
+            groupID: 0
+          }
+        ]
+      });
+    }
+
+    if (epLower === 'getnowdayrechargeamount') {
+      return success({
+        totalRechargeAmount: 0.0,
+        rechargeCount: 0
+      });
+    }
+
+    if (epLower === 'getrechargecategoryusablecoupon') {
+      return success({
+        list: []
+      });
+    }
+
+    if (epLower === 'checkfirstpixrecharge') {
+      return success(false);
+    }
+
     // 4. Pre-recorded live endpoints
     for (const key of Object.keys(LIVE_DATA)) {
       if (key.toLowerCase() === epLower) {

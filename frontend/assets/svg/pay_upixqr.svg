@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 50" width="80" height="50">
+  <!-- UPI x QR icon -->
+  <g transform="translate(10, 4)">
+    <!-- UPI main logo -->
+    <text x="5" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#097939">UP</text>
+    <text x="36" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#E65100">I</text>
+    <polygon points="45,4 55,14 45,24" fill="#097939" opacity="0.9" />
+    <polygon points="49,7 57,14 49,21" fill="#E65100" opacity="0.9" />
+  </g>
+  <!-- Mini payment pills underneath -->
+  <g transform="translate(12, 32)">
+    <circle cx="8" cy="8" r="6" fill="#00BAF2" />
+    <circle cx="28" cy="8" r="6" fill="#5F259F" />
+    <circle cx="48" cy="8" r="6" fill="#4285F4" />
+  </g>
+</svg>

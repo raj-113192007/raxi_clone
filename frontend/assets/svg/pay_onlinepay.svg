@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 50" width="80" height="50">
+  <g transform="translate(14, 6)">
+    <text x="5" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#FFFFFF">UP</text>
+    <text x="36" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#E65100">I</text>
+    <polygon points="45,4 55,14 45,24" fill="#097939" opacity="0.9" />
+    <polygon points="49,7 57,14 49,21" fill="#E65100" opacity="0.9" />
+  </g>
+  <g transform="translate(18, 33)">
+    <rect x="0" y="0" width="12" height="8" rx="2" fill="#00BAF2" />
+    <rect x="16" y="0" width="12" height="8" rx="2" fill="#5F259F" />
+    <rect x="32" y="0" width="12" height="8" rx="2" fill="#4CAF50" />
+  </g>
+</svg>

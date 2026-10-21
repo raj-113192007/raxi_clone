@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 50" width="80" height="50">
+  <g transform="translate(24, 9)">
+    <rect x="0" y="0" width="32" height="32" rx="8" fill="#F5B722" />
+    <!-- White stylised triangular A -->
+    <path d="M16,6 L26,24 L21,24 L16,14 L11,24 L6,24 Z" fill="#FFFFFF" />
+  </g>
+</svg>

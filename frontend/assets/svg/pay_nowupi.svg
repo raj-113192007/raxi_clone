@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 50" width="80" height="50">
+  <!-- Crosshairs / target motif -->
+  <g opacity="0.3" stroke="#D32F2F" stroke-width="2">
+    <path d="M22,12 L16,12 L16,18" fill="none" />
+    <path d="M58,12 L64,12 L64,18" fill="none" />
+    <path d="M22,38 L16,38 L16,32" fill="none" />
+    <path d="M58,38 L64,38 L64,32" fill="none" />
+  </g>
+  <g transform="translate(16, 12)">
+    <text x="5" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#FFFFFF">UP</text>
+    <text x="36" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#E65100">I</text>
+    <polygon points="45,4 55,14 45,24" fill="#097939" opacity="0.9" />
+  </g>
+</svg>
