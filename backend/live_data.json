@@ -8365,7 +8365,7 @@
       "unJackpotCount": 0,
       "isOpenActivityAward": "1",
       "unWeeklyAwardCount": 0,
-      "isFinishUserGuidelines": false,
+      "isFinishUserGuidelines": true,
       "isFirstUserDayRequest": false,
       "isOpenChampion": "0",
       "newbieGiftPackCount": 0,
@@ -8786,5 +8786,31 @@
     "msg": "Succeed",
     "msgCode": 0,
     "data": false
+  },
+  "GetActiveSetting": {
+    "code": 0,
+    "msg": "Succeed",
+    "msgCode": 0,
+    "data": {
+      "isTaskState": "0",
+      "isOpenJackpotReward": "1",
+      "isOpenWashCode": "0",
+      "unJackpotCount": 0,
+      "isOpenActivityAward": "1",
+      "unWeeklyAwardCount": 0,
+      "isFinishUserGuidelines": true,
+      "isFirstUserDayRequest": false,
+      "isOpenChampion": "0",
+      "newbieGiftPackCount": 0,
+      "newMemberGiftPackageSwitch": "1",
+      "todayRewards": 0,
+      "totalRewards": 0
+    }
+  },
+  "SaveUserGuidelines": {
+    "code": 0,
+    "msg": "Succeed",
+    "msgCode": 0,
+    "data": {}
   }
 }

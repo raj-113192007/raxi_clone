@@ -139,11 +139,17 @@ app.post(['/api/webapi/GetSiteMessageList', '/api/webapi/getsitemessagelist'], (
 });
 
 // 10. Loaded Setting
-app.post(['/api/webapi/GetLoadedSetting', '/api/webapi/getloadedsetting'], (req, res) => {
-  if (liveData.GetLoadedSetting) {
-    return res.json(liveData.GetLoadedSetting);
-  }
-  res.json(success({ needPopupFirstRecharge: true }));
+app.post(['/api/webapi/GetLoadedSetting', '/api/webapi/getloadedsetting', '/api/webapi/GetActiveSetting', '/api/webapi/getactivesetting'], (req, res) => {
+  const base = (liveData.GetLoadedSetting && liveData.GetLoadedSetting.data) || {};
+  res.json(success({
+    ...base,
+    needPopupFirstRecharge: true,
+    isFinishUserGuidelines: true
+  }));
+});
+
+app.post(['/api/webapi/SaveUserGuidelines', '/api/webapi/saveuserguidelines'], (req, res) => {
+  res.json(success({}));
 });
 
 // 10b. First Recharge List for Bonus Dialog
